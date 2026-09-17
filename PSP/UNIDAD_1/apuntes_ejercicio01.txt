@@ -1,0 +1,14 @@
+# PRogramación concurrente esquema
+## que cosas debe de incluir la wea esta csm
+### Cosas en general a incluir
+    1. Explicaciòn de la ia a tratar
+    2. preguntas importantes a la IA
+    3. Analisis criticos de las respuestas de la IA
+    4. relacion con procesos e hilos
+    5. relacion con concurrencia y parelelismo
+    6. relacion con sistemas distribuidos
+    
+### Diapositivas
+    1. Presentación con nombres
+    2. esquema de la ia a tratar
+    3. 
