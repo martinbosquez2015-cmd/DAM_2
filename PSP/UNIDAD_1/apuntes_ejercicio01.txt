@@ -10,5 +10,10 @@
     
 ### Diapositivas
     1. Presentación con nombres
+    1.5 Introduccion
     2. esquema de la ia a tratar
-    3. 
+    3. presentacion de las preguntas más importantes
+    4. su análisis crítico
+    5. los tipos de relaciones
+    6. conclusion
+    
