@@ -1,0 +1,2 @@
+creame un texto de bash simple en el que se imprima en pantalla una lista de tareas que tengo por estado y fecha de entrega. tambien me dará la opción de cambiar el estado de cada una, añadir tareas o eliminar tareas por entrada de texto.
+si es encesario el uso de ficheros externos a modo de base de datos para consultar las tareas pendientes y acabadas hazlo de esa manera.
