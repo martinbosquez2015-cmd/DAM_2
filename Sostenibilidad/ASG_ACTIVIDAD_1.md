@@ -3,30 +3,30 @@ __NOMBRE:__ Martin Taboada
 __CURSO:__ DAM 2
 ## <center> __Los Aspectos Ambientales, Sociales y de Gobernanza (ASG)__</center>
 ### __Actividad 1__
-
+El concepto de sostenibilidad se puede definir como el proceder de tal manera que se proteja el medio ambiente utilizando recursos de manere eficiente sin llegar a comprometer el crecimiento sociual ni económico.
 
 ### __Actividad 2__
 | Letra | Actuación | Práctica sostenible |
 | ------------ | ------------ | ------------ |
-| A      | Una fábrica sustituye luminarias antiguas por sistemas LED de bajo consumo.      | Celda 3      |
-| B      | Una empresa compra materias primas únicamente a proveedores con compromisos ambientales y laborales.      | Celda 6      |
-| C      | Una compañía publica cada año sus emisiones y sus objetivos de reducción.     | Celda 3      |
-| D      | Una empresa rediseña un envase para utilizar menos material y facilitar su reciclaje.     | Celda 6      |
-| E      | Una planta instala un sistema nuevo para reutilizar el agua del proceso productivo      | Celda 3      |
-| F      | Una empresa participa en programas de apoyo a la comunidad local.      | Celda 6      |
-| G      | Una industria incorpora maquinaria más limpia para disminuir emisiones contaminantes      | Celda 3      |
+| A      | Una fábrica sustituye luminarias antiguas por sistemas LED de bajo consumo.      | Eficiencia energética      |
+| B      | Una empresa compra materias primas únicamente a proveedores con compromisos ambientales y laborales.      | Cadena de suministro sostenible      |
+| C      | Una compañía publica cada año sus emisiones y sus objetivos de reducción.     | Transparencia y rendición de cuentas      |
+| D      | Una empresa rediseña un envase para utilizar menos material y facilitar su reciclaje.     | Diseño ecoeficiente      |
+| E      | Una planta instala un sistema nuevo para reutilizar el agua del proceso productivo      |    Gestión de recursos naturales   |
+| F      | Una empresa participa en programas de apoyo a la comunidad local.      | Responsabilidad Social Corporativa      |
+| G      | Una industria incorpora maquinaria más limpia para disminuir emisiones contaminantes      | Innovación tecnológica      |
 
 
 ### __Actividad 3__
 
 | Acontecimiento  | Año |
 | ------------ | ------------ |
-| Declaración de Estocolmo      | Celda 2      |
-| Informe Brundtland      | Celda 5      |
-| Cumbre de Río de Janeiro      | Celda 2      |
-| Protocolo de Kioto      | Celda 5      |
-| Objetivos de Desarrollo del Milenio     | Celda 2      |
-| ODS y Agenda 2030      | Celda 5      |
+| Declaración de Estocolmo      |   1972    |    
+| Informe Brundtland      | 1987      |
+| Cumbre de Río de Janeiro      |   1992   |
+| Protocolo de Kioto      |  1997  |
+| Objetivos de Desarrollo del Milenio     |  2000   |
+| ODS y Agenda 2030      | 2015   |
 
 ### __Actividad 4__
 
