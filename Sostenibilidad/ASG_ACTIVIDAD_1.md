@@ -33,34 +33,33 @@ El concepto de sostenibilidad se puede definir como el proceder de tal manera qu
 
 | N.º | Actuación | A / S / G |
 | ------------ | ------------ | ------------ |
-|  1      | Reducción del consumo de agua.      |       |
-| 2      | Plan de prevención de accidentes laborales.      |       |
-|  3      | Código ético para directivos y trabajadores.      |       |
-|  4      | Programa de igualdad y no discriminación.  |       |
-|  5      | Reducción de emisiones de CO₂.       |       |
-|  6      | Auditoría interna para prevenir la corrupción.      |       |
-|  7      | Protección de la biodiversidad cercana a una fábrica.     |       |
-|  8      | Publicación transparente de información no financiera.     |       |
-|  9      | Compra a proveedores locales y responsables.     |      |
-|  10      | Reciclaje y tratamiento adecuado de residuos.      |       |
-|  11      | Medidas de conciliación para la plantilla.      |      |
-|  12      | Control del cumplimiento de leyes y normas.      |       |
+|  1      | Reducción del consumo de agua.      |    A   |
+| 2      | Plan de prevención de accidentes laborales.      |   S    |
+|  3      | Código ético para directivos y trabajadores.      |   G   |
+|  4      | Programa de igualdad y no discriminación.  |   S    |
+|  5      | Reducción de emisiones de CO₂.       |   A    |
+|  6      | Auditoría interna para prevenir la corrupción.      |   G    |
+|  7      | Protección de la biodiversidad cercana a una fábrica.     |   A    |
+|  8      | Publicación transparente de información no financiera.     |   G    |
+|  9      | Compra a proveedores locales y responsables.     |   G   |
+|  10      | Reciclaje y tratamiento adecuado de residuos.      |  A     |
+|  11      | Medidas de conciliación para la plantilla.      |   S   |
+|  12      | Control del cumplimiento de leyes y normas.      |   G    |
 
 ### __Actividad 5__
 
 | Situación  | ODS |
 | ------------ | ------------ |
-| Una ciudad amplía su red de transporte público y carriles bici.     | Celda 2      |
-| Una empresa instala placas solares para reducir el consumo de combustibles fósiles.      | Celda 5      |
-| Se crea un programa para garantizar el acceso a agua potable en zonas rurales.      | Celda 2      |
-| Una campaña pretende reducir el desperdicio de alimentos y el uso de envases
-innecesarios      | Celda 5      |
-| Se construyen centros educativos en zonas con baja escolarización.     | Celda 2      |
-| Una organización trabaja para proteger especies y bosques amenazados      | Celda 5      |
-| Una empresa introduce un plan de igualdad salarial entre mujeres y hombres.      | Celda 5      |
-| Se desarrollan nuevas tecnologías para mejorar infraestructuras y procesos industriales     | Celda 2      |
-|Se crean programas de empleo digno para jóvenes.      | Celda 5      |
-| Varios países colaboran para financiar proyectos de desarrollo sostenible.     | Celda 5      |
+| Una ciudad amplía su red de transporte público y carriles bici.     | 11 Ciudades y comunidades sostenibles      |
+| Una empresa instala placas solares para reducir el consumo de combustibles fósiles.      | 7 Energía asequible y no contaminante      |
+| Se crea un programa para garantizar el acceso a agua potable en zonas rurales.      | 6 Agua limpia y saneamiento      |
+| Una campaña pretende reducir el desperdicio de alimentos y el uso de envases innecesarios      | 2 Hambre Cero      |
+| Se construyen centros educativos en zonas con baja escolarización.     | 4 Educación de calidad      |
+| Una organización trabaja para proteger especies y bosques amenazados      | 15 Vida de ecosistemas terrestres      |
+| Una empresa introduce un plan de igualdad salarial entre mujeres y hombres.      |  5 Igualdad de género      |
+| Se desarrollan nuevas tecnologías para mejorar infraestructuras y procesos industriales     | 9 industria, innovación e infraestructura      |
+|Se crean programas de empleo digno para jóvenes.      | 3 Salud y bienestar      |
+| Varios países colaboran para financiar proyectos de desarrollo sostenible.     | 17 Alianzas para lograr objetivos     |
 
 
 
@@ -68,13 +67,12 @@ innecesarios      | Celda 5      |
 
 | Afirmación | V/F | Corrección si es falsa |
 | ------------ | ------------ | ------------ |
-|  La Agenda 2030 fue aprobada en 2015      |       |       |
-| Los ODS son independientes entre sí y no tienen relación unos con otros      | Plan de prevención de accidentes laborales.      |       |
-|  Los criterios ASG solo analizan aspectos medioambientales      | Código ético para directivos y trabajadores.      |       |
-|  Una empresa sostenible puede mejorar su reputación y acceder a nuevos
-mercados.      | Programa de igualdad y no discriminación.     |       |
-|  La ISO 14001 está relacionada con la gestión ambiental.      | Reducción de emisiones de CO₂.       |       |
-|  La ISR solo tiene en cuenta la rentabilidad económica de una inversión      | Auditoría interna para prevenir la corrupción.      |       |
+|  La Agenda 2030 fue aprobada en 2015      |  V     |       |
+| Los ODS son independientes entre sí y no tienen relación unos con otros      |  F  |  Son objetivos interconectados     |
+|  Los criterios ASG solo analizan aspectos medioambientales      |   F   |   También se analizan aspectos sociales y legales    |
+|  Una empresa sostenible puede mejorar su reputación y acceder a nuevos mercados.      | V     |       |
+|  La ISO 14001 está relacionada con la gestión ambiental.      |   V       |       |
+|  La ISR solo tiene en cuenta la rentabilidad económica de una inversión      | F      |   También se tienen en cuenta los aspectos ASG    |
 
 
 ### __Actividad 7__
@@ -84,7 +82,12 @@ publica anualmente sus datos de emisiones, exige a sus proveedores un código de
 controles para prevenir el fraude. Sin embargo, sigue generando una gran cantidad de residuos electrónicos
 y ha recibido críticas por no reciclarlos correctamente.   
 __a) Identifica al menos cinco actuaciones ASG de la empresa y clasifícalas como A, S o G.__  
-
+la empresa
+- Instalación de placas solares
+- integración de plan de igualdad
+- transparencia publicando datos de emisiones
+- exige a sus proveedores codigos de conducta
+- implantación de controles para precvenir el fraude
 __b) ¿Qué riesgo puede producir la mala gestión de los residuos electrónicos?__  
 
 __c) Indica dos oportunidades que puede obtener la empresa si mejora su sostenibilidad.__  
@@ -98,13 +101,10 @@ __d) Propón dos medidas concretas para mejorar el aspecto ambiental de la empre
 | Situación | Riesgo / oportunidad |Explicación|
 | ------------ | ------------ | ------------ |
 |  Una empresa reduce un 20 % su consumo de electricidad.        | Reducción del consumo de agua.      |       |
-| Una compañía es sancionada por superar los límites de emisiones
-permitidos      | Plan de prevención de accidentes laborales.      |       |
+| Una compañía es sancionada por superar los límites de emisiones permitidos      | Plan de prevención de accidentes laborales.      |       |
 | Una marca obtiene una certificación ambiental reconocida.     | Código ético para directivos y trabajadores.      |       |
-|  Se publica en redes sociales un caso de discriminación laboral
-dentro de la empresa.     | Programa de igualdad y no discriminación.  |       |
-|  La empresa desarrolla un producto reutilizable que tiene mucha
-aceptación entre los clientes.      | Reducción de emisiones de CO₂.       |       |
+|  Se publica en redes sociales un caso de discriminación laboral dentro de la empresa.     | Programa de igualdad y no discriminación.  |       |
+|  La empresa desarrolla un producto reutilizable que tiene mucha aceptación entre los clientes.      | Reducción de emisiones de CO₂.       |       |
 
 ### __Actividad 9__
 
