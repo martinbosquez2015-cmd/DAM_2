@@ -12,10 +12,12 @@ __CURSO:__ DAM 2
 
 | Color | ¿Dónde aparece? | ¿Qué significado parece tener? |
 | ------------ | ------------ | ------------ |
-| A      | Una fábrica sustituye luminarias antiguas por sistemas LED de bajo consumo.      | Eficiencia energética      |
-| B      | Una empresa compra materias primas únicamente a proveedores con compromisos ambientales y laborales.      | Cadena de suministro sostenible      |
-| C      | Una compañía publica cada año sus emisiones y sus objetivos de reducción.     | Transparencia y rendición de cuentas      |
-
+| Blanco __(Principal)__     | Es el fondo en gran parte de la página: es el fondo genera, se encuentra en paneles informativos y pop-ups       | maximizar la legibilidad de la página con respecto al uso de los otros colores      |
+|  Gris oscuro __(Secundario)__     | Fondo de la barra de navegación superior e inferior     | brindar un primer contraste para delimitar, tanto la barra de navegación superior, como la barra de navegación inferior      |
+| Grises claros __(Neutros)__      | En ciertos botones, bordes y en lineas en toda la página     |    Las líneas en específico tienen una función de separadores entre secciones de la página   |
+| Amarillo/Naranja __(Estado o aviso)__      | En botones de opciones con el producto(adquirirlo o añadirlo al carrito) y el ícono de búsqueda      |    Hace un llamado a que el usuario realice una acción, resaltando la interacción principal   |
+| Rojo oscuro __(Estado o aviso)__      | En ciertos botones, bordes y en lineas en toda la página     |    Las líneas en específico tienen una función de separadores entre secciones de la página   |
+| Grises claros __(Estado o aviso)__      | En ciertos botones, bordes y en lineas en toda la página     |    Las líneas en específico tienen una función de separadores entre secciones de la página   |
 __(La otra parte de las anotaciones del color)__
 
 2. __¿El uso del color es coherente?__
