@@ -1,15 +1,18 @@
 package BankingTest;
-import Banking.Account;
+
 import org.junit.jupiter.api.Test;
+import java.time.LocalDate;
+import Banking.Account;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class AccountTest {
+class AccountoTesto {
 
     @Test
-    void shouldPrintStatementAfterOneDeposit() {
+    void ImprimirExtractoDespuesDeUnDeposito() {
         Account account = new Account();
 
+        account.setDate(LocalDate.of(2015, 12, 24));
         account.deposit(500);
 
         String statement = account.printStatement();
@@ -22,10 +25,13 @@ class AccountTest {
     }
 
     @Test
-    void shouldPrintStatementAfterDepositAndWithdraw() {
+    void ImprimirExtractoDespuesDeDepositoYRetiro() {
         Account account = new Account();
 
+        account.setDate(LocalDate.of(2015, 12, 24));
         account.deposit(500);
+
+        account.setDate(LocalDate.of(2016, 8, 23));
         account.withdraw(100);
 
         String statement = account.printStatement();
@@ -39,9 +45,10 @@ class AccountTest {
     }
 
     @Test
-    void shouldUpdateBalanceAfterDeposit() {
+    void ActualizarSaldoDespuesDeDeposito() {
         Account account = new Account();
 
+        account.setDate(LocalDate.of(2015, 12, 24));
         account.deposit(500);
         account.deposit(300);
 
@@ -56,10 +63,13 @@ class AccountTest {
     }
 
     @Test
-    void shouldUpdateBalanceAfterWithdraw() {
+    void ActualizarSaldoDespuesDeRetiro() {
         Account account = new Account();
 
+        account.setDate(LocalDate.of(2015, 12, 24));
         account.deposit(1000);
+
+        account.setDate(LocalDate.of(2016, 8, 23));
         account.withdraw(300);
 
         String statement = account.printStatement();
@@ -73,7 +83,7 @@ class AccountTest {
     }
 
     @Test
-    void shouldReturnEmptyStatementForNewAccount() {
+    void RetornarEncabezadoParaCuentaNueva() {
         Account account = new Account();
 
         assertEquals(

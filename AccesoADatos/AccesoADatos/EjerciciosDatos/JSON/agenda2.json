@@ -1,0 +1,18 @@
+{
+    "agenda":[{
+        "nombre": "Juan Pérez",
+        "telefono": ["60845521","5245346"],
+        "dni": "12345678X"
+    },
+    {
+        "nombre": "Juan Píriz",
+        "telefono": ["60845521","5245346"],
+        "dni": "12345678Y"
+    },
+    {
+        "nombre": "Juan Pòroz",
+        "telefono": ["60845521","5245346"],
+        "dni": "12345678Z"
+    }
+    ]
+}

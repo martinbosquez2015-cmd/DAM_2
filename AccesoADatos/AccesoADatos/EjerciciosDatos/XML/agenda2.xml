@@ -1,0 +1,22 @@
+<?xml version= "1.0" encoding="UTF-8" standalone = "no"?>
+<agenda>
+    <contacto>
+        <nombre>
+            Juan
+        </nombre>
+                <telefono tipo="movil">
+            604885589
+        </telefono>        
+        <telefono tipo="fijo">
+            684885589
+        </telefono>
+    </contacto>
+    <contacto>
+        <nombre>
+            mATIN
+        </nombre>
+        <telefono>
+            608445230
+    </telefono>
+    </contacto>
+</agenda>

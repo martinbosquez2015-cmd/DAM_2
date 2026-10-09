@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<agenda>
+                
+    
+    
+    <contacto>
+                                
+        
+        
+        <nombre>Juan</nombre>
+                                        
+        
+        
+        <telefono tipo="movil">604885589 </telefono>
+                                
+
+    
+    
+    
+    </contacto>
+                
+    
+    
+    <contacto>
+                                
+        
+        
+        <nombre>mATIN</nombre>
+                                
+        
+        
+        <telefono>608445230</telefono>
+                            
+    
+    
+    </contacto>
+            
+    
+    
+    <contacto>
+                        
+        
+        <nombre>Leonor</nombre>
+                        
+        
+        <telefono>666554433</telefono>
+                    
+    
+    </contacto>
+        
+    
+    <contacto>
+                
+        <nombre>Sofía</nombre>
+                
+        <telefono>111222333</telefono>
+            
+    </contacto>
+    
+</agenda>

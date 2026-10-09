@@ -68,3 +68,64 @@ public static void modificarTelefono(String nombre, String telefono, String ruta
 
 
 ```
+
+
+
+### __Mano, te doy una pequeña guia de como instalar el docker y meterle el pipi de mysql para generar la conexion__
+1. Primero seguimos la guia de instalación en el auyla virtual para ponerle el jar de mysl a eclipse
+2. luego, desde la terminal ponemos los siguientes códigos:
+
+```
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=abc123 -d mysql
+
+```
+
+algunos codiguillos para abrir los dockers de mysql
+```
+docker ps
+docker star mysql
+docker stop mysql
+docker exec -it mysql bash
+
+```
+luego con eso entramos al docker, desde ahí hay algunos codigos para crear usuarios dentro del mysql
+```
+create user perroflauta@localhost identified by "abc123";
+grant all on *.* to perroflauta@localhost;
+flush privileges;
+```
+pero nos daba un error con el java, que esta asi
+```
+package jdbcMcHunnigan;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class MainJ {
+
+	public static void main(String[] args) {
+		String url = "jdbc:mysql://localhost/";
+		String usuario = "perroflauta";
+		String password = "abc123";
+		
+		try {
+			Connection conn = DriverManager.getConnection(url, usuario, password);
+			System.out.println("Conexión exitosa weon");
+			conn.close();
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+```
+así que creamos a un usuario con la ip que nos daba error en java
+```
+create user perroflauta@172.17.0.1 identified by "abc123";
+grant all on *.* to perroflauta@172.17.0.1;
+flush privileges;
+```
