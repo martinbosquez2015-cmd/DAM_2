@@ -22,3 +22,6 @@
 2026-10-09 08:59:54,428 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2026-10-13 09:00:29,805 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2026-10-21 12:46:01,391 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-10-22 13:59:48,315 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-10-22 13:59:55,177 [Worker-28: Load https://gitlab.eclipse.org/eclipse/ease/ease/-/raw/main/releng/org.eclipse.ease.releng/oomph/ease.setup] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - ex-0000000053 https://gitlab.eclipse.org:443 responded with status 429; request will be automatically re-executed in 1 SECONDS (exec count 2)
+2026-10-22 13:59:55,214 [Worker-2: Load https://gitlab.eclipse.org/eclipse/graphiti/graphiti/-/raw/master/parent/Graphiti.setup] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - ex-0000000166 https://gitlab.eclipse.org:443 responded with status 429; request will be automatically re-executed in 1 SECONDS (exec count 2)
