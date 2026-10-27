@@ -1,6 +1,8 @@
 package Test;
 
 
+import def.Contact;
+import def.TextFileContactSource;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
