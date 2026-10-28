@@ -129,3 +129,19 @@ create user perroflauta@172.17.0.1 identified by "abc123";
 grant all on *.* to perroflauta@172.17.0.1;
 flush privileges;
 ```
+
+
+**IMPORTANTE**
+PARA PASAR ARCHIVOS AL DOCKER SE HACE:
+
+```
+docker cp mi_archivo.sql NOMBRE_CONTENEDOR:/home
+```
+
+PARA ESTE DOCKER ESPECIALMENTE SE HARÁ ESTO:
+
+```
+docker cp classicmodels.sql  mysql:/home
+```
+
+y para que not e iolvides, dentro del docker, para coger la base de datos le haces asi

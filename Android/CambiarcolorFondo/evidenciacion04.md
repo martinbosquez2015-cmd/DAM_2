@@ -1,7 +1,7 @@
 # <center>IES FRANCISCO DE GOYA</center>
 __NOMBRE:__ Martin Taboada  
 __CURSO:__ DAM 2
-## <center> __Programación Multimedia y Dispositivos Móviles:__</center>   <center> __Como calcular propina__</center>
+## <center> __Programación Multimedia y Dispositivos Móviles:__</center>   <center> __Cambiar Fondo__</center>
 A continuación se presentarán evidencias sobre el ejercicio planteado en el aula virtual, se presentarán tanto las imágenes como el texto plano del fragmento del código: 
 ### __MainActivity.kt__
 ```
