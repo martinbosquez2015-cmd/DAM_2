@@ -1,0 +1,154 @@
+-- Primer prompt:
+
+Necesito que generes un prompt para otra ia que realice el proyecto planteado por un pdf adjunto ciñiéndose al mismo y haciéndolo de tal manera que me explique paso a paso lo que hace, no caiga en errores tipicos de la ia y se base un poco en apuntes pasados que le he enviado 
+
+================================================================================================
+
+--Prompt generado por la ia:
+
+Gradle:
+
+Si utilizamos Gradle, añadimos la siguiente línea dentro de dependencies en el archivo build.gradle:
+implementation 'com.ejemplo:calculadora-financeira:1.1.0'
+
+
+3. Ejemplo de uso básico
+Una vez añadida la biblioteca al proyecto, podemos importar la clase CalculadoraFinanceira y utilizar sus métodos.
+import com.ejemplo.calculadorafinanceira.CalculadoraFinanceira;
+
+public class Main {
+    public static void main(String[] args) {
+
+        CalculadoraFinanceira calculadora = new CalculadoraFinanceira();
+
+        double suma = calculadora.sumar(10, 5);
+        double division = calculadora.dividir(20, 4);
+        double interes = calculadora.calcularInteresSimple(1000, 5, 2);
+
+        System.out.println("Suma: " + suma);
+        System.out.println("División: " + division);
+        System.out.println("Interés simple: " + interes);
+    }
+}
+
+
+En este ejemplo se crea un objeto de la clase y se utilizan tres de sus métodos para realizar diferentes operaciones.
+4. Métodos disponibles
+La biblioteca dispone de los siguientes métodos:
+Método	Descripción	Parámetros
+sumar(a, b)	Suma dos números.	Dos números.
+restar(a, b)	Resta dos números.	Dos números.
+multiplicar(a, b)	Multiplica dos números.	Dos números.
+dividir(a, b)	Divide dos números.	Dos números.
+calcularInteresSimple(c, t, a)	Calcula el interés simple.	Capital, tasa anual y años.
+calcularInteresCompuesto(c, t, a)	Calcula el interés compuesto.	Capital, tasa anual y años.
+
+En los métodos de intereses, la tasa se indica como un porcentaje. Por ejemplo, para un 5 % se debe introducir el valor 5.
+
+En el caso de la división, el divisor no puede ser cero.
+5. Licencia
+Este proyecto utiliza la licencia MIT, que permite utilizar, modificar y distribuir el código, siempre que se mantenga la información de la licencia original.
+
+Para más información, se puede consultar el archivo LICENSE.
+
+### Ejercicio 5. Documentación de API
+
+En este ejemplo he utilizado un endpoint `GET` para consultar los datos de un usuario a partir de su identificador. Es una forma sencilla de representar la gestión de usuarios mediante una API REST.
+
+```markdown
+# API REST - Gestión de usuarios
+
+## 1. Descripción del endpoint
+
+Este endpoint permite consultar la información de un usuario registrado en la aplicación mediante su identificador.
+
+**Método:** GET
+
+**URL:** `/api/usuarios/{id}`
+
+El sistema recibe el identificador del usuario y devuelve sus datos si existe dentro de la aplicación.
+
+## 2. Parámetros
+
+El endpoint utiliza el siguiente parámetro:
+
+| Parámetro | Tipo | Obligatorio | Descripción |
+|---|---|---|---|
+| `id` | Integer | Sí | Identificador del usuario que queremos consultar. |
+
+Ejemplo de URL:
+
+```http
+GET /api/usuarios/15
+
+
+3. Respuestas posibles
+El endpoint puede devolver diferentes códigos HTTP dependiendo del resultado de la solicitud.
+Código	Descripción
+200	La solicitud se ha realizado correctamente y se devuelven los datos del usuario.
+400	El identificador proporcionado no es válido.
+404	No se ha encontrado ningún usuario con ese identificador.
+500	Se ha producido un error interno en el servidor.
+
+4. Ejemplo de solicitud
+Para consultar los datos del usuario con identificador 15, realizamos la siguiente petición:
+GET /api/usuarios/15
+
+
+5. Ejemplo de respuesta JSON
+Si el usuario existe, el servidor devuelve una respuesta con código 200 y sus datos en formato JSON.
+{
+    "id": 15,
+    "nombre": "Martin",
+    "email": "martin@example.com"
+}
+
+
+En caso de que el usuario no exista, el servidor devolvería un código 404 con un mensaje indicando que no se ha encontrado.
+{
+    "error": "Usuario no encontrado"
+}
+
+
+De esta manera, el endpoint permite consultar los datos de los usuarios de forma sencilla, utilizando su identificador y devolviendo una respuesta según el resultado de la operación.
+
+### Ejercicio 6. CHANGELOG.md
+
+```markdown
+# Changelog
+
+En este archivo se registran los cambios realizados en las diferentes versiones de la aplicación.
+
+El formato utilizado sigue las recomendaciones de Keep a Changelog.
+
+## [1.1.0] - 2026-11-04
+
+### Añadido
+- Se ha añadido la posibilidad de exportar los datos de los usuarios.
+- Se han incorporado nuevas opciones de configuración.
+- Se ha añadido una validación para comprobar los datos introducidos.
+
+### Modificado
+- Se ha mejorado la organización del código.
+- Se ha optimizado el tiempo de respuesta de algunas operaciones.
+- Se ha actualizado la interfaz para facilitar su uso.
+
+### Corregido
+- Se ha solucionado un error al guardar los datos de los usuarios.
+- Se ha corregido un problema que provocaba resultados incorrectos en determinadas operaciones.
+
+## [1.0.0] - 2026-10-01
+
+### Añadido
+- Primera versión de la aplicación.
+- Se han incorporado las funciones principales.
+- Se ha creado la interfaz inicial.
+- Se ha añadido la gestión básica de usuarios.
+
+
+Nota: Los nombres de las dependencias Maven y Gradle son ejemplos para este ejercicio, ya que no existe información sobre una publicación real de la biblioteca. Las fechas y los cambios del CHANGELOG.md también son datos de ejemplo que puedes adaptar.
+
+
+
+
+

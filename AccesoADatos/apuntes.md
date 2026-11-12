@@ -145,3 +145,10 @@ docker cp classicmodels.sql  mysql:/home
 ```
 
 y para que not e iolvides, dentro del docker, para coger la base de datos le haces asi
+
+
+
+
+con jdbc hay una cosilla
+![alt text](image.png)
+luego de hacerlo, se cambia el driver class porque esta algo antiguo de que nos e que
