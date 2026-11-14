@@ -12,6 +12,20 @@ input { padding: 10px; border: 1px solid #bbb; border-radius: 8px; min-width: 26
 .room { position: relative; height: 360px; border-radius: 18px; overflow: hidden; background: #dce8f3; border: 6px solid #a8b7c7; transition: .3s; }
 .room.light-on { background: #fff3b8; }
 .room.night { background: #182033; color: white; }
+.room.summer { background-image:
+        linear-gradient(rgba(255, 220, 120, 0.15),
+                        rgba(255, 220, 120, 0.15)),
+        url("images/simpsons-hell.gif");
+
+    background-color: #f5d88c; background-repeat: no-repeat;
+background-size: cover;}
+.room.seso {  background-image:
+        linear-gradient(rgba(255, 220, 120, 0.15),
+                        rgba(255, 220, 120, 0.15)),
+        url("images/room.webp");
+
+    background-color: #f5d88c; background-repeat: no-repeat;
+background-size: cover; }
 .window { position: absolute; width: 180px; height: 140px; left: 70px; top: 60px; background: #9bd4ff; border: 10px solid #fff; overflow: hidden; }
 .blind { position: absolute; inset: 0; background: repeating-linear-gradient(#777 0 12px, #999 12px 18px); transition: .5s; }
 .blind.open { transform: translateY(-125px); }
