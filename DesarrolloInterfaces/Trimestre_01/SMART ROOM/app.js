@@ -192,7 +192,8 @@ function easterEggs(texto) {
 
   if (
     texto.includes("tengo calor") ||
-    texto.includes("me estoy asando")
+    texto.includes("me estoy asando") ||
+    texto.includes("estoy hot 🥵🔥")
   ) {
     ponerNuevaTemperatura(temp - 1)
     informar("¡Uf, mano! Te he bajado un gradito");
@@ -290,7 +291,6 @@ function ejecutarComando(textoOriginal) {
   else
     informar("Comando no reconocido", true)
 
-  // Usa una estructura if / else if
 
 }
 
@@ -518,7 +518,7 @@ const palabrasCerrar = [
 
 
   "tapala",
-  "achala abajo",
+  "echale abajo",
 
   "cerra",
   "baja",
