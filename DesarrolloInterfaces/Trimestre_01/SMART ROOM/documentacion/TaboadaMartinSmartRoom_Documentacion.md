@@ -115,6 +115,7 @@ A continuación, se documenta la batería de pruebas ejecutadas tanto mediante r
 * **Resultado esperado:** Actualización exacta del indicador numérico de temperatura dentro del rango válido.
 
 ![alt text](image-5.png)
+![alt text](image-13.png)
 ![alt text](image-6.png)
 ---
 
