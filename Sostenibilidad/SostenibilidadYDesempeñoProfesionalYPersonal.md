@@ -50,6 +50,9 @@ Asociación de cada concepto clave con su definición correspondiente dentro del
 </div>
 
 ---
+<br>
+<br>
+
 
 ### __Actividad 3. Relación directa o indirecta__
 
