@@ -18,7 +18,7 @@ public class Main {
                         ? Path.of(args[0])
                         : Path.of("contacts.txt");
 
-                ContactSource contactSource =
+                 ContactSource contactSource =
                         new TextFileContactSource(contactsPath);
 
                 MessageSender messageSender =

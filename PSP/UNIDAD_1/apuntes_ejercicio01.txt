@@ -17,3 +17,5 @@
     5. los tipos de relaciones
     6. conclusion
     
+el hilo siempre va a iterar
+

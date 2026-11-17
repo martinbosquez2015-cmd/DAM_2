@@ -106,7 +106,7 @@ En Java, un **proceso** es un programa en ejecución que dispone de su propio es
 
 Como el proceso hijo no tiene ventana de consola, sus flujos estándar (`stdin`, `stdout`, `stderr`) están conectados directamente al proceso padre[cite: 14, 18].
 
-> ** ¡OJO CON LA DIRECCIÓN DE LOS STREAMS! (Trampa típica de examen)**
+> **¡OJO CON LA DIRECCIÓN DE LOS STREAMS! (Trampa típica de examen)**
 > Los nombres de los métodos en la clase `Process` están nombrados **desde el punto de vista del proceso padre**:
 > * `p.getOutputStream()`: Es un flujo de **salida** para el padre, por donde **envía** datos hacia la entrada estándar (`System.in`) del hijo[cite: 14, 15].
 > * `p.getInputStream()`: Es un flujo de **entrada** para el padre, por donde **lee** lo que el hijo imprime en su salida normal (`System.out`).
