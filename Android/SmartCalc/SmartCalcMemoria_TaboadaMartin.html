@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SmartCalcMemoria_TaboadaMartin.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="ies-francisco-de-goya"><center>IES FRANCISCO DE GOYA</center></h1>
+<p><strong>NOMBRE:</strong> Martin Taboada<br>
+<strong>CURSO:</strong> DAM 2</p>
+<h2 id="programación-multimedia-y-dispositivos-móviles----smartcalc"><center> <strong>Programación Multimedia y Dispositivos Móviles:</strong></center>   <center> <strong>SmartCalc</strong></center></h2>
+<div align="justify">El presente documento se define en calidad de memoria técnica de la entrega propuesta en el aula virtual: SmartCalc. Una calculadora en la cual se tendrá más en cuenta el desarrollo del aspecto visual. En la presente memoria se detallarán los objetivos, las herramientas utilizadas, el diseño planteado y el funcionamiento junto con problemas iniciales. Además, se detalla, como una herramienta didáctica, el uso de la inteligencia artificial.
+<p>A continuación se adjunta el enlace del repositorio del proyecto: <a href="https://github.com/martinbosquez2015-cmd/SmartCalc">SmartCalc</a></p>
+ </div>
+<br>
+<hr>
+<h2 id="1-objetivos">1. Objetivos</h2>
+<div align="justify">El problema propuesto consiste en el desarrollo de una aplicación móvil de calculadora funcional en Android, donde no solo importe la correcta ejecución de las operaciones matemáticas básicas, sino también la calidad de su arquitectura y su acabado visual. El propósito principal es evitar interfaces genéricas o con atributos estéticos repetidos manualmente en cada componente, apostando por una interfaz limpia, coherente y adaptable.</div>
+<br>
+<div align="justify">Los objetivos específicos que se pretenden conseguir con el proyecto son los siguientes:</div>
+<ul>
+<li><strong>Separación de responsabilidades:</strong> Desacoplar la lógica matemática y el control de estados de la interfaz gráfica mediante una clase dedicada (<code>CalculatorEngine</code>), manteniendo <code>MainActivity</code> enfocada únicamente en la gestión de eventos y la actualización de la vista.</li>
+<li><strong>Control de errores y doble visualización:</strong> Implementar una pantalla doble que muestre tanto la operación en curso como el resultado o entrada actual, controlando errores habituales como la división por cero o la introducción de múltiples puntos decimales en una misma cifra.</li>
+<li><strong>Centralización de estilos:</strong> Definir todos los atributos visuales en archivos de recursos (<code>styles.xml</code> y <code>themes.xml</code>), categorizando los botones según su función (numéricos, operadores, acciones especiales e igual).</li>
+<li><strong>Mejoras visuales e integración con el sistema:</strong> Como mejora añadida sobre los requisitos básicos, se implementa la adaptación dinámica de colores según el fondo de pantalla del usuario (Material You), soporte nativo para modo claro y oscuro, personalización asimétrica de las esquinas de los componentes y el uso de una tipografía personalizada.</li>
+</ul>
+<br>
+<br>
+<br>
+<hr>
+<h2 id="2-herramientas">2. Herramientas</h2>
+<div align="justify">Observando los recursos otorgados por el docente se ha optado por el uso de la librería <b>Material Components for Android (Material Design 3)</b> y su API de colores dinámicos (<code>DynamicColors</code>) para que el diseño de los botones cambie acorde a la paleta de colores del mismo fondo de pantalla del dispositivo móvil y para que sea compatible con un cambio de color por el tema oscuro.</div>
+<br>
+<div align="justify">En conjunto, el entorno y las tecnologías empleadas fuera de la API más básica del sistema son:</div>
+<ul>
+<li><strong>Android Studio &amp; Kotlin:</strong> Entorno de desarrollo oficial y lenguaje de programación principal del proyecto, aprovechando su seguridad frente a nulos y sintaxis concisa.</li>
+<li><strong>View Binding:</strong> Herramienta activada en Gradle para vincular de forma segura y directa los componentes XML con el código Kotlin sin recurrir a llamadas repetitivas de <code>findViewById</code>.</li>
+<li><strong>Material Design 3 (<code>com.google.android.material</code>):</strong> Empleada para los componentes <code>MaterialButton</code> y <code>MaterialCardView</code>, el sistema de tokens de color (<code>?attr/colorPrimary</code>, <code>?attr/colorSurfaceContainerHigh</code>, etc.) y <code>DynamicColors.applyToActivitiesIfAvailable()</code>, logrando que la paleta cromática se genere dinámicamente a partir del fondo de pantalla en dispositivos con Android 12 o superior.</li>
+<li><strong>ConstraintLayout y LinearLayout anidados:</strong> Utilizados para estructurar la pantalla de visualización y distribuir equitativamente el teclado mediante pesos (<code>layout_weight</code>).</li>
+<li><strong>Recursos de fuentes (<code>res/font</code>) y <code>ShapeAppearanceOverlay</code>:</strong> Utilizados para incorporar una tipografía distinta a la predeterminada y moldear individualmente el radio de cada esquina en botones y contenedores.</li>
+<li><strong>Inteligencia Artificial (Gemini):</strong> Empleada como herramienta didáctica de apoyo para la resolución de problemas de renderizado en el layout, la consulta de tokens de Material 3 y la redacción estructurada de esta documentación.</li>
+</ul>
+<hr>
+<h2 id="3-diseño">3. Diseño</h2>
+<div align="justify">Inicialmente se planteó un boceto conceptual de la interfaz buscando alejarse del aspecto rectangular y plano que ofrecen los botones por defecto en Android Studio. Aunque en una primera fase se priorizó levantar la estructura funcional, ese planteamiento estético se retomó y materializó en la recta final del desarrollo mediante la personalización selectiva de las esquinas (aplicando radios distintos en esquinas opuestas mediante <code>shapeAppearanceOverlay</code> tanto en los botones como en el contenedor de la pantalla) y la incorporación de una fuente tipográfica diferente en la carpeta de recursos (<code>res/font</code>) junto con cifras tabulares para dar mayor personalidad y claridad a los números.</div>
+<br>
+<p align="center">
+<img src="image-2.png" alt="Captura de pantalla" width="600" align= "center"/>
+</p>
+<h3 id="diagrama-de-clases-uml">Diagrama de Clases (UML)</h3>
+<div align="justify">A nivel arquitectónico, el proyecto se divide en tres clases principales para garantizar el bajo acoplamiento entre la inicialización del tema dinámico, la interfaz de usuario y el motor de cálculo:</div>
+<p><img src="image-9.png" alt="alt text"></p>
+<br>
+<br>
+<br>
+<h3 id="diagrama-de-casos-de-uso">Diagrama de Casos de Uso</h3>
+<div align="justify">El usuario interactúa directamente con la interfaz principal de SmartCalc para realizar cálculos aritméticos, gestionar la entrada de datos y beneficiarse de la adaptación visual del sistema:</div>
+<p><img src="image-8.png" alt="alt text"></p>
+<hr>
+<h2 id="4-funcionamiento">4. Funcionamiento</h2>
+<div align="justify">Durante la fase de implementación surgió un problema inicial relevante con la visualización del teclado: al emplear un <code>GridLayout</code> estándar con pesos en las columnas, el primer botón de cada fila se estiraba ocupando todo el ancho disponible, empujando al resto de botones fuera de la pantalla y ocultando su texto. Tras analizar el fallo implementando un apoyo en la inteligencia artificial como herramienta de consulta, se identificó el conflicto de distribución y se sustituyó el contenedor por una estructura de <code>LinearLayout</code> horizontales anidados con <code>layout_weight="1"</code>, corrigiendo además los márgenes internos de <code>MaterialButton</code>. De este modo, todos los botones quedaron perfectamente alineados y visibles.</div>
+<br>
+<div align="center">
+<img src="image.png" alt="Captura de pantalla" height="600" />
+<p><img src="image-1.png" alt="vista previa"></p>
+</div>
+<div align="justify">Una vez resuelta la maquetación, el funcionamiento de la aplicación abarca todas las operaciones requeridas:</div>
+<ul>
+<li><strong>Entrada numérica y decimal:</strong> Al pulsar los dígitos (<code>0-9</code>), <code>CalculatorEngine</code> concatena las cifras evitando ceros innecesarios a la izquierda. El botón <code>.</code> comprueba si la cifra actual ya contiene un separador decimal para impedir valores inválidos como <code>12.3.4</code>.</li>
+<li><strong>Operaciones aritméticas y doble pantalla:</strong> Al seleccionar <code>+</code>, <code>-</code>, <code>×</code> o <code>÷</code>, se almacena el primer operando y se refleja la expresión en curso en el <code>TextView</code> superior (<code>tvExpression</code>), dejando el principal (<code>tvResult</code>) preparado para el siguiente número. Al pulsar <code>=</code>, se muestra la operación completa arriba y el resultado formateado abajo.</li>
+<li><strong>Acciones de control (<code>C</code>, <code>DEL</code>, <code>±</code>):</strong> Permiten reiniciar por completo el estado de la calculadora, borrar el último carácter introducido o invertir el signo del número actual.</li>
+<li><strong>Control de errores:</strong> Si se intenta dividir entre cero, el motor captura la condición antes de ejecutar la división, activa el estado de error y muestra el mensaje <code>&quot;Error: Div por 0&quot;</code> sin que la aplicación se cierre, reiniciándose automáticamente en la siguiente pulsación.</li>
+<li><strong>Adaptación dinámica de color y tema:</strong> Como se aprecia en las siguientes capturas, al modificar el fondo de pantalla del dispositivo o activar el modo oscuro del sistema, la interfaz recalcula automáticamente los tonos de contenedores, texto y botones manteniendo la legibilidad y coherencia estética.</li>
+</ul>
+<br>
+<div align="center">
+<p><img src="image-3.png" alt="fondo1">
+<img src="image-4.png" alt="funcionamiento1"></p>
+</div>
+<div align="center">
+<p><img src="image-5.png" alt="modo oscuro"></p>
+<p><img src="image-6.png" alt="fondo2">
+<img src="image-7.png" alt="funcionamiento2"></p>
+</div>
+<hr>
+<h2 id="5-conclusiones">5. Conclusiones</h2>
+<div align="justify">Se han cumplido satisfactoriamente todos los objetivos técnicos y visuales propuestos para SmartCalc. La calculadora realiza con precisión las operaciones aritméticas exigidas, gestiona correctamente los errores de entrada y división por cero, y mantiene una arquitectura limpia gracias a la separación entre <code>MainActivity</code> y <code>CalculatorEngine</code>. Asimismo, la centralización de estilos en XML junto con Material Design 3 ha permitido lograr una interfaz moderna, con esquinas personalizadas, tipografía cuidada y adaptación automática tanto al fondo de pantalla como al modo oscuro del dispositivo.</div>
+<br>
+<div align="justify">Como posibles mejoras futuras para ampliar la aplicación se observan las siguientes líneas de trabajo:</div>
+<ul>
+<li><strong>Soporte para operaciones encadenadas y paréntesis:</strong> Ampliar <code>CalculatorEngine</code> para evaluar expresiones completas con jerarquía de operadores en lugar de limitarse a pares de operandos.</li>
+<li><strong>Historial de cálculos:</strong> Añadir un panel deslizable o diálogo donde el usuario pueda consultar y reutilizar resultados de operaciones anteriores.</li>
+<li><strong>Funciones científicas y porcentaje:</strong> Incorporar botones adicionales para cálculo de porcentajes (<code>%</code>), potencias o raíces cuadradas manteniendo la coherencia con los estilos definidos.</li>
+</ul>
+
+</body>
+</html>

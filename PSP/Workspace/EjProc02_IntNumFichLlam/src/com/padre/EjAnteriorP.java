@@ -6,13 +6,21 @@ import java.util.Scanner;
 public class EjAnteriorP {
 
 	public static void main(String[] args) throws Exception {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Escribe un número entero positivo: ");
-		String numero = sc.nextLine();
+		//Scanner sc = new Scanner(System.in);
+		//System.out.println("Escribe un número entero positivo: ");
+		//String numero = sc.nextLine();
 		File directorio = new File("../EjProc02_IntNumFich/bin");
 		ProcessBuilder pb = new ProcessBuilder("java","com.hijo.EjAnterior");
 		pb.directory(directorio);
+		File fDAto = new File("/home/alumno", "dato.txt");
+		
+		
+		
+	
+		pb.redirectInput(fDAto);
+		
 	    //se ejecuta el proceso
+		
 		Process p = pb.start();
 
 		int salida = p.waitFor();
@@ -35,7 +43,7 @@ public class EjAnteriorP {
 
 		}
 
-		sc.close();
+	//	sc.close();
 	}
 
 }
