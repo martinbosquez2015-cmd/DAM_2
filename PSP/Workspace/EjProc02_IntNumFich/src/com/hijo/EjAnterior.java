@@ -34,8 +34,13 @@ public class EjAnterior {
 				try {
 				int numero = Integer.parseInt(input);
 				if(numero>0) {
-					
+					retorno = -3;
 				}
+				else if(numero==0) {
+					retorno = -4;
+				}
+				else
+					retorno =0;
 			}catch (NumberFormatException e) {
 				retorno = -2; // Entero no válido
 			}

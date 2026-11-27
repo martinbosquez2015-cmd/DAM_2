@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Benchmark {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int numClientes = 10_000;
         int numPedidos = 50_000;
         double impuesto = 0.21;
-        Scanner sc =  new Scanner(System.in);
+        //Scanner sc =  new Scanner(System.in);
         List<String> clientesVip = GeneradorDatosPrueba.generarClientesVip(numClientes);
         List<String> pedidos = GeneradorDatosPrueba.generarPedidos(numPedidos, numClientes);
 
@@ -34,6 +34,6 @@ public class Benchmark {
         System.out.printf("Tiempo de ejecución: %.2f ms%n", tiempoMs);
         System.out.printf("Heap actual usado: %.2f MB%n", heapUsadoMb);
         System.out.println("Longitud del informe: " + informe.length() + " caracteres");
-        String pausa = sc.nextLine();
+        //String pausa = sc.nextLine();
     }
 }

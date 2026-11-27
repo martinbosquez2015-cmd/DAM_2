@@ -4,14 +4,28 @@
 Se diagnosticó y optimizó `ProcesadorFacturacion` sobre un dataset de 50.000 pedidos y 10.000 clientes, manteniendo la salida textual 100 % idéntica (`equals == true`).
 
 ## 2. Hallazgos del análisis estático
-- [Captura del panel de inspecciones / SonarLint / Problems]
-- Problemas detectados: variable sin usar, concatenación de `String` en bucle, condición booleana redundante (`esVip == true`), números mágicos (`0.15`, `100`) y búsqueda lineal anidada.
+![alt text](image.png)
+![alt text](image-1.png)
+- Problemas detectados: variable sin usar, concatenación de `String` en bucle, condición booleana redundante (`esVip == true`), importación sin usar y búsqueda lineal anidada. Debido a que SonarQube no detectaba más problemas como la busqueda lineal anidada(detectada por el mismo IDE), tambien se adjunta esa detección
 
 ## 3. Diagnóstico con Profiler (Antes vs. Después)
-- **CPU (Antes):** [Indica método/línea con mayor % CPU, p. ej. búsqueda en lista / bucle anidado].
-- **Memoria (Antes):** [Indica punto de mayor asignación, p. ej. concatenación `resultado += ...`].
-- **Después:** [Describe cómo cae el tiempo y la asignación de objetos tras usar `HashSet` y `StringBuilder`].
-- [Insertar capturas del Flame Graph / Call Tree antes y después].
+- **CPU (Antes):** 
+![alt text](image-8.png)
+![alt text](image-9.png)
+
+- **Memoria (Antes):** 
+![alt text](image-7.png)
+
+- **Resultado impreso (Antes):** 
+![alt text](image-13.png)
+- **Después:** 
+![alt text](image-10.png)
+![alt text](image-11.png)
+![alt text](image-12.png)
+    **Resultado impreso** 
+
+    ![alt text](image-14.png)
+
 
 ## 4. Refactorizaciones aplicadas
 - Extracción de constantes (`DESCUENTO_VIP`, `UMBRAL_IMPORTE`) y eliminación de código muerto.
@@ -22,9 +36,9 @@ Se diagnosticó y optimizó `ProcesadorFacturacion` sobre un dataset de 50.000 p
 
 | Métrica Evaluada | Versión Inicial | Versión Optimizada | Mejora (%) | Herramienta del IDE utilizada |
 | :--- | :--- | :--- | :--- | :--- |
-| Tiempo de ejecución (ms) | | | | |
-| Memoria máxima asignada (MB) | | | | |
-| Nº de *Warnings / Code Smells* | | | | |
+| Tiempo de ejecución (ms) |9317.30 |475.25 | | |
+| Memoria máxima asignada (MB) | 185.82| 47.53| | |
+| Nº de *Warnings / Code Smells* | 5 | 0 | | |
 | Complejidad ciclomática del método principal | | | | |
 
 ## 6. Verificación funcional

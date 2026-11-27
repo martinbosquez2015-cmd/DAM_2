@@ -12,11 +12,11 @@ public class EjAnteriorP {
 		File directorio = new File("../EjProc02_IntNumFich/bin");
 		ProcessBuilder pb = new ProcessBuilder("java","com.hijo.EjAnterior");
 		pb.directory(directorio);
-		File fDAto = new File("/home/alumno", "dato.txt");
+		File fDAto = new File("../../Ficheros/", "dato.txt");
 		
 		
 		
-	
+	 
 		pb.redirectInput(fDAto);
 		
 	    //se ejecuta el proceso

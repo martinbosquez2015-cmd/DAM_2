@@ -1,4 +1,4 @@
-
+* *is* es un getter de uan variabel booleana
 
  * Todos los hilos, siempre que acaban de hacer algo, que se salgan y que luego hagan otra cosa para que entren otros hilos, que espere, 
  * Los hilos demonio estan al margen de su proceso

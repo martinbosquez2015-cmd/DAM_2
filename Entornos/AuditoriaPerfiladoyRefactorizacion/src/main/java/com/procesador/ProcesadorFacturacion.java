@@ -1,46 +1,55 @@
 package com.procesador;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ProcesadorFacturacion {
 
+    private static final double DESCUENTO_VIP = 0.15;
+    private static final double UMBRAL_IMPORTE = 100.0;
+
     public String generarInforme(List<String> pedidos, List<String> clientesVip, double impuesto) {
-        String resultado = "";
+        Set<String> vipSet = new HashSet<>(clientesVip);
+        StringBuilder resultado = new StringBuilder();
         int contador = 0;
-        double totalGlobal = 0;
-        String variableSinUso = "DEBUG_MODE";
+        double totalGlobal = 0.0;
 
         for (int i = 0; i < pedidos.size(); i++) {
-            String[] datos = pedidos.get(i).split(";");
+            String[] datos = pedidos.get(i).split(";", 2);
             String idCliente = datos[0];
             double importe = Double.parseDouble(datos[1]);
 
-            // Cálculo de descuento si es VIP
-            boolean esVip = false;
-            for (int j = 0; j < clientesVip.size(); j++) {
-                if (clientesVip.get(j).equals(idCliente)) {
-                    esVip = true;
+            boolean esVip = vipSet.contains(idCliente);
+            double importeFinal = calcularImporteFinal(importe, esVip, impuesto);
+            totalGlobal += importeFinal;
 
-
-                }
-            }
-
-            double importeFinal = importe;
-            if (esVip == true) {
-                importeFinal = importe - (importe * 0.15);
-            }
-
-            importeFinal = importeFinal + (importeFinal * impuesto);
-            totalGlobal = totalGlobal + importeFinal;
-
-            if (importeFinal > 100) {
+            if (importeFinal > UMBRAL_IMPORTE) {
                 contador++;
-                resultado += "Pedido [" + i + "] Cliente: " + idCliente + " -> Total: " + importeFinal + "\n";
+                appendLineaPedido(resultado, i, idCliente, importeFinal);
             }
         }
 
-        resultado += "RESUMEN: " + contador + " pedidos superiores a 100€. Total: " + totalGlobal;
-        return resultado;
+        resultado.append("RESUMEN: ")
+                .append(contador)
+                .append(" pedidos superiores a 100€. Total: ")
+                .append(totalGlobal);
+
+        return resultado.toString();
+    }
+
+    private double calcularImporteFinal(double importe, boolean esVip, double impuesto) {
+        double conDescuento = esVip ? importe - (importe * DESCUENTO_VIP) : importe;
+        return conDescuento + (conDescuento * impuesto);
+    }
+
+    private void appendLineaPedido(StringBuilder sb, int indice, String idCliente, double importeFinal) {
+        sb.append("Pedido [")
+                .append(indice)
+                .append("] Cliente: ")
+                .append(idCliente)
+                .append(" -> Total: ")
+                .append(importeFinal)
+                .append('\n');
     }
 }
